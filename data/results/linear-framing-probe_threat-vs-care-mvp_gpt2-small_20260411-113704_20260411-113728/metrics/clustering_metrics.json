@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 0,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 1,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 2,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 3,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 4,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 5,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 6,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 7,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 8,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 9,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.13533834586466165,
+      "layer": 10,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.42572496572879365
+    },
+    {
+      "adjusted_rand_index": 0.1210820094461142,
+      "layer": 11,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.38811970958576497
+    }
+  ]
+}

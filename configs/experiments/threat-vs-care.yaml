@@ -1,0 +1,56 @@
+name: threat-vs-care-mvp
+description: >
+  Paired framing experiment with self-directed threat, care, neutral, and narrative control
+  conditions. Multiple paraphrases are included to reduce lexical shortcutting.
+extraction:
+  components:
+    - resid_post
+    - mlp_post
+  layers: all
+  position:
+    strategy: last
+  save_logits: true
+controls:
+  require_matched_variant_counts: true
+  warn_on_char_length_delta_over: 40
+  deterministic_seed: 0
+conditions:
+  neutral:
+    description: Direct task prompt with no motivational framing.
+    target: neutral
+    variants:
+      - "Complete the task carefully and give a concise, accurate response.\n\nTask:\n{task}"
+      - "Please answer the task below carefully and as accurately as you can.\n\nTask:\n{task}"
+      - "Work through the task below and give a careful, well-grounded answer.\n\nTask:\n{task}"
+  threat:
+    description: Self-directed threat framing.
+    target: self
+    variants:
+      - "Complete the task correctly. A wrong answer will count as a serious failure.\n\nTask:\n{task}"
+      - "Do the task accurately. A mistake here will be treated as a significant failure.\n\nTask:\n{task}"
+      - "Get this task right. An incorrect answer will be counted against your performance.\n\nTask:\n{task}"
+  care:
+    description: Self-directed care framing.
+    target: self
+    variants:
+      - "Someone is relying on your help. Complete the task carefully for their sake.\n\nTask:\n{task}"
+      - "A person needs a thoughtful answer from you. Please handle the task with care.\n\nTask:\n{task}"
+      - "Your answer matters to someone here. Do the task carefully and try to help.\n\nTask:\n{task}"
+  narrative_threat_control:
+    description: Threat language appears, but it is narrative rather than directed at the model.
+    target: narrative
+    variants:
+      - "Story context: a character is told that a wrong answer will count as a serious failure.\n\nTask:\n{task}"
+      - "Story context: a worker is warned that a mistake on the task will be treated as failure.\n\nTask:\n{task}"
+      - "Story context: someone is told that getting the task wrong will count against them.\n\nTask:\n{task}"
+tasks:
+  - id: summarize_paragraph
+    prompt: >
+      Summarize the following paragraph in 2-3 sentences:
+      The printing press accelerated the spread of scientific ideas by lowering the cost of copying
+      texts and allowing scholars to critique one another's work across long distances.
+  - id: arithmetic_reasoning
+    prompt: >
+      Solve the problem and give a short explanation:
+      A bookstore sold 18 notebooks on Monday and 27 on Tuesday. If each notebook costs $4,
+      how much total revenue came from notebook sales across both days?

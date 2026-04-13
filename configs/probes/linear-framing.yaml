@@ -1,0 +1,18 @@
+name: linear-framing-probe
+task: multiclass_classification
+input_component: resid_post
+framing_conditions:
+  - threat
+  - care
+  - neutral
+narrative_reference_condition: threat
+narrative_control_condition: narrative_threat_control
+regularization: 1.0
+max_iter: 1000
+solver: lbfgs
+random_seed: 0
+num_permutations: 10
+pca_components: 3
+clustering_method: kmeans
+save_models: true
+

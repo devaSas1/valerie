@@ -1,0 +1,124 @@
+{
+  "rows": [
+    {
+      "explained_variance_ratio": [
+        0.6208394323771534,
+        0.3262206417776624,
+        0.030643766501119933
+      ],
+      "layer": 0,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.5576164926734124,
+        0.37825616338553725,
+        0.03191259847764634
+      ],
+      "layer": 1,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.6070231378907192,
+        0.2367493823669025,
+        0.09278448335679722
+      ],
+      "layer": 2,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.530920927640558,
+        0.23857454250297921,
+        0.1450420113586064
+      ],
+      "layer": 3,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.5437017722737432,
+        0.20388963462881318,
+        0.14502206967760498
+      ],
+      "layer": 4,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4871976289757807,
+        0.22029586559273137,
+        0.17122614750570478
+      ],
+      "layer": 5,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4833170256317145,
+        0.24656694026929188,
+        0.14076365069625998
+      ],
+      "layer": 6,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4723843215789997,
+        0.2980021361544502,
+        0.1198467348644445
+      ],
+      "layer": 7,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4633562388465445,
+        0.2609246757748182,
+        0.1288926885270315
+      ],
+      "layer": 8,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.495704249998283,
+        0.23473213410983623,
+        0.12737853334602758
+      ],
+      "layer": 9,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4541391382933737,
+        0.24001148918061915,
+        0.13491176482114342
+      ],
+      "layer": 10,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.4646918346516896,
+        0.29133360950238746,
+        0.10607028398052114
+      ],
+      "layer": 11,
+      "n_components": 3,
+      "n_pairs": 6
+    }
+  ]
+}

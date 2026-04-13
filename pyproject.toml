@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.26.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "valerie"
+version = "0.1.0"
+description = "Config-driven interpretability tooling for framing experiments in language models."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Deva" },
+]
+dependencies = [
+  "numpy>=1.26,<3.0",
+  "pydantic>=2.7,<3.0",
+  "pyyaml>=6.0,<7.0",
+  "scikit-learn>=1.5,<2.0",
+  "scipy>=1.13,<2.0",
+  "torch>=2.4,<3.0",
+  "transformer-lens>=2.11,<3.0",
+  "matplotlib>=3.9,<4.0",
+  "plotly>=5.24,<6.0",
+  "tqdm>=4.66,<5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9.0",
+  "ruff>=0.6,<1.0",
+]
+
+[project.scripts]
+valerie-run-experiment = "valerie.experiments.runner:main"
+valerie-train-probes = "valerie.probes.trainer:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/valerie"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

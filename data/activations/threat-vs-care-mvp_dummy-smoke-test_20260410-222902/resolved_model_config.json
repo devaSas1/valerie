@@ -1,0 +1,20 @@
+{
+  "backend": "dummy",
+  "cache_dir": null,
+  "default_prepend_bos": true,
+  "device_preference": [
+    "cpu"
+  ],
+  "dtype": "float32",
+  "dummy_d_model": 16,
+  "dummy_n_layers": 4,
+  "first_n_layers": null,
+  "model_name": "dummy",
+  "n_ctx": null,
+  "name": "dummy-smoke-test",
+  "quantization": {
+    "mode": "none"
+  },
+  "seed": 0,
+  "trust_remote_code": false
+}

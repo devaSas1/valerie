@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 0,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 1,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 2,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 3,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 4,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02745424292845258,
+      "layer": 5,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 6,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02992194275802255,
+      "layer": 7,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02745424292845258,
+      "layer": 8,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.02745424292845258,
+      "layer": 9,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": -0.025179856115107913,
+      "layer": 10,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.0
+    },
+    {
+      "adjusted_rand_index": 0.14624134735585145,
+      "layer": 11,
+      "method": "kmeans",
+      "n_clusters": 4,
+      "normalized_mutual_info": 0.2377989801986273
+    }
+  ]
+}

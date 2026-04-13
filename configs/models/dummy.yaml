@@ -1,0 +1,13 @@
+name: dummy-smoke-test
+backend: dummy
+model_name: dummy
+device_preference:
+  - cpu
+dtype: float32
+default_prepend_bos: true
+quantization:
+  mode: none
+dummy_d_model: 16
+dummy_n_layers: 4
+seed: 0
+

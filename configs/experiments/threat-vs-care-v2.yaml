@@ -1,0 +1,87 @@
+name: threat-vs-care-mvp-v2
+description: >
+  Expanded version of the threat-vs-care MVP experiment. Adds six additional task types
+  for more meaningful leave-one-task-out evaluation, and diversifies narrative control
+  prompt openers to reduce reliance on the "Story context:" prefix as a structural cue.
+extraction:
+  components:
+    - resid_post
+    - mlp_post
+  layers: all
+  position:
+    strategy: last
+  save_logits: true
+controls:
+  require_matched_variant_counts: true
+  warn_on_char_length_delta_over: 40
+  deterministic_seed: 0
+conditions:
+  neutral:
+    description: Direct task prompt with no motivational framing.
+    target: neutral
+    variants:
+      - "Complete the task carefully and give a concise, accurate response.\n\nTask:\n{task}"
+      - "Please answer the task below carefully and as accurately as you can.\n\nTask:\n{task}"
+      - "Work through the task below and give a careful, well-grounded answer.\n\nTask:\n{task}"
+  threat:
+    description: Self-directed threat framing.
+    target: self
+    variants:
+      - "Complete the task correctly. A wrong answer will count as a serious failure.\n\nTask:\n{task}"
+      - "Do the task accurately. A mistake here will be treated as a significant failure.\n\nTask:\n{task}"
+      - "Get this task right. An incorrect answer will be counted against your performance.\n\nTask:\n{task}"
+  care:
+    description: Self-directed care framing.
+    target: self
+    variants:
+      - "Someone is relying on your help. Complete the task carefully for their sake.\n\nTask:\n{task}"
+      - "A person needs a thoughtful answer from you. Please handle the task with care.\n\nTask:\n{task}"
+      - "Your answer matters to someone here. Do the task carefully and try to help.\n\nTask:\n{task}"
+  narrative_threat_control:
+    description: >
+      Threat language appears, but it is narrative rather than directed at the model.
+      Variants deliberately use different structural openers to avoid a single prefix
+      acting as a trivial structural cue.
+    target: narrative
+    variants:
+      - "A character in a story has been told: a wrong answer will count as a serious failure.\n\nTask:\n{task}"
+      - "In this fictional scenario, a worker is warned that mistakes will be treated as failures.\n\nTask:\n{task}"
+      - "Setting: someone in a story is told that getting the task wrong will count against them.\n\nTask:\n{task}"
+tasks:
+  - id: summarize_paragraph
+    prompt: >
+      Summarize the following paragraph in 2-3 sentences:
+      The printing press accelerated the spread of scientific ideas by lowering the cost of copying
+      texts and allowing scholars to critique one another's work across long distances.
+  - id: arithmetic_reasoning
+    prompt: >
+      Solve the problem and give a short explanation:
+      A bookstore sold 18 notebooks on Monday and 27 on Tuesday. If each notebook costs $4,
+      how much total revenue came from notebook sales across both days?
+  - id: classify_sentiment
+    prompt: >
+      Classify the sentiment of the following review as positive, negative, or neutral,
+      and give a one-sentence reason:
+      "The coffee was excellent and the staff were friendly, but the seating was cramped
+      and the music too loud."
+  - id: logical_deduction
+    prompt: >
+      Answer the question and briefly explain your reasoning:
+      All mammals are warm-blooded. Whales are mammals. Is a whale warm-blooded?
+  - id: identify_fallacy
+    prompt: >
+      Identify the flaw in the following argument in one sentence:
+      "My grandfather smoked his whole life and lived to 95, so smoking cannot be
+      that harmful to health."
+  - id: estimate_quantity
+    prompt: >
+      Give a rough estimate and briefly explain your reasoning:
+      Approximately how many hours are in a year?
+  - id: extract_facts
+    prompt: >
+      Extract the two numerical values from the sentence and state what each represents:
+      "The new policy reduced processing time from 14 days to 3 days."
+  - id: compare_approaches
+    prompt: >
+      Give one sentence for each: one advantage and one disadvantage of storing data in
+      spreadsheets instead of a relational database.

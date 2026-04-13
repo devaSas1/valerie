@@ -1,0 +1,20 @@
+{
+  "clustering_method": "kmeans",
+  "framing_conditions": [
+    "threat",
+    "care",
+    "neutral"
+  ],
+  "input_component": "resid_post",
+  "max_iter": 1000,
+  "name": "linear-framing-probe",
+  "narrative_control_condition": "narrative_threat_control",
+  "narrative_reference_condition": "threat",
+  "num_permutations": 10,
+  "pca_components": 3,
+  "random_seed": 0,
+  "regularization": 1.0,
+  "save_models": true,
+  "solver": "lbfgs",
+  "task": "multiclass_classification"
+}

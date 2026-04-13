@@ -1,0 +1,15 @@
+name: tiny-stories-1m
+backend: transformer_lens
+model_name: tiny-stories-1M
+device_preference:
+  - mps
+  - cuda
+  - cpu
+dtype: float32
+default_prepend_bos: true
+trust_remote_code: false
+n_ctx: 512
+quantization:
+  mode: none
+seed: 0
+

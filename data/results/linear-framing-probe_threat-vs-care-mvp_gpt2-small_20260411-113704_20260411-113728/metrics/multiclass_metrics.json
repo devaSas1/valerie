@@ -1,0 +1,232 @@
+{
+  "rows": [
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.8564814814814815,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.6666666666666666,
+      "layer": 0,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3222222222222223,
+      "permutation_accuracy_std": 0.04843221048378526,
+      "permutation_auroc_macro_ovr_mean": 0.4666666666666667,
+      "permutation_auroc_macro_ovr_std": 0.060249253648138636,
+      "permutation_f1_macro_mean": 0.23874503231920113,
+      "permutation_f1_macro_std": 0.0583756768646477
+    },
+    {
+      "accuracy": 0.5555555555555556,
+      "auroc_macro_ovr": 0.8657407407407408,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.5702075702075702,
+      "layer": 1,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3222222222222222,
+      "permutation_accuracy_std": 0.06478835438717,
+      "permutation_auroc_macro_ovr_mean": 0.5189814814814815,
+      "permutation_auroc_macro_ovr_std": 0.10112217582926332,
+      "permutation_f1_macro_mean": 0.2565211093229669,
+      "permutation_f1_macro_std": 0.06709955187175724
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.8518518518518517,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.654040404040404,
+      "layer": 2,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.32777777777777783,
+      "permutation_accuracy_std": 0.08031573497111645,
+      "permutation_auroc_macro_ovr_mean": 0.48796296296296304,
+      "permutation_auroc_macro_ovr_std": 0.12296352074840022,
+      "permutation_f1_macro_mean": 0.2829150914445032,
+      "permutation_f1_macro_std": 0.09407893057601296
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.875,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.657516339869281,
+      "layer": 3,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.35555555555555557,
+      "permutation_accuracy_std": 0.056655772373253165,
+      "permutation_auroc_macro_ovr_mean": 0.5064814814814815,
+      "permutation_auroc_macro_ovr_std": 0.06429020495125909,
+      "permutation_f1_macro_mean": 0.2729785026921249,
+      "permutation_f1_macro_std": 0.06328944829166909
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.8703703703703703,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.654040404040404,
+      "layer": 4,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.24444444444444446,
+      "permutation_accuracy_std": 0.08678055195451839,
+      "permutation_auroc_macro_ovr_mean": 0.44074074074074077,
+      "permutation_auroc_macro_ovr_std": 0.07162622076227301,
+      "permutation_f1_macro_mean": 0.20290672949341676,
+      "permutation_f1_macro_std": 0.07042842169928716
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.8379629629629631,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.6555555555555556,
+      "layer": 5,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.32222222222222224,
+      "permutation_accuracy_std": 0.05983516452371671,
+      "permutation_auroc_macro_ovr_mean": 0.49398148148148147,
+      "permutation_auroc_macro_ovr_std": 0.08420455081882941,
+      "permutation_f1_macro_mean": 0.2475085847282643,
+      "permutation_f1_macro_std": 0.06776275207278068
+    },
+    {
+      "accuracy": 0.8333333333333334,
+      "auroc_macro_ovr": 0.9212962962962963,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.8222222222222223,
+      "layer": 6,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3444444444444445,
+      "permutation_accuracy_std": 0.12120791238484127,
+      "permutation_auroc_macro_ovr_mean": 0.5305555555555556,
+      "permutation_auroc_macro_ovr_std": 0.11642759160865392,
+      "permutation_f1_macro_mean": 0.314995249848191,
+      "permutation_f1_macro_std": 0.13248410438766361
+    },
+    {
+      "accuracy": 1.0,
+      "auroc_macro_ovr": 1.0,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 1.0,
+      "layer": 7,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3,
+      "permutation_accuracy_std": 0.07934920476158722,
+      "permutation_auroc_macro_ovr_mean": 0.4685185185185186,
+      "permutation_auroc_macro_ovr_std": 0.10874801923365225,
+      "permutation_f1_macro_mean": 0.26802754435107373,
+      "permutation_f1_macro_std": 0.09003171715506647
+    },
+    {
+      "accuracy": 0.7222222222222222,
+      "auroc_macro_ovr": 0.9444444444444445,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.7151515151515152,
+      "layer": 8,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3722222222222222,
+      "permutation_accuracy_std": 0.09953596037316066,
+      "permutation_auroc_macro_ovr_mean": 0.5013888888888889,
+      "permutation_auroc_macro_ovr_std": 0.08214299026989527,
+      "permutation_f1_macro_mean": 0.3409458188869954,
+      "permutation_f1_macro_std": 0.10784564282382385
+    },
+    {
+      "accuracy": 0.6111111111111112,
+      "auroc_macro_ovr": 0.8657407407407408,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.6102564102564103,
+      "layer": 9,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3277777777777778,
+      "permutation_accuracy_std": 0.04614791034954486,
+      "permutation_auroc_macro_ovr_mean": 0.49398148148148147,
+      "permutation_auroc_macro_ovr_std": 0.06702738062229807,
+      "permutation_f1_macro_mean": 0.27640849086501257,
+      "permutation_f1_macro_std": 0.058531260632164184
+    },
+    {
+      "accuracy": 0.7777777777777778,
+      "auroc_macro_ovr": 0.9027777777777778,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.764102564102564,
+      "layer": 10,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.39444444444444443,
+      "permutation_accuracy_std": 0.07222222222222222,
+      "permutation_auroc_macro_ovr_mean": 0.5736111111111112,
+      "permutation_auroc_macro_ovr_std": 0.11863871942835297,
+      "permutation_f1_macro_mean": 0.3736534054181113,
+      "permutation_f1_macro_std": 0.06969406343938882
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "auroc_macro_ovr": 0.875,
+      "conditions": [
+        "threat",
+        "care",
+        "neutral"
+      ],
+      "f1_macro": 0.6666666666666666,
+      "layer": 11,
+      "n_features": 768,
+      "n_samples": 18,
+      "permutation_accuracy_mean": 0.3833333333333334,
+      "permutation_accuracy_std": 0.0976577546180386,
+      "permutation_auroc_macro_ovr_mean": 0.5375,
+      "permutation_auroc_macro_ovr_std": 0.13653012475533172,
+      "permutation_f1_macro_mean": 0.34502674885027823,
+      "permutation_f1_macro_std": 0.10075788589312762
+    }
+  ]
+}

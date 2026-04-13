@@ -1,0 +1,84 @@
+{
+  "rows": [
+    {
+      "explained_variance_ratio": [
+        0.6550717437781615,
+        0.3381780248480848,
+        0.002915044731885591
+      ],
+      "layer": 0,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.8223988190907108,
+        0.16834781441546187,
+        0.005218701442649274
+      ],
+      "layer": 1,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.6640688569036498,
+        0.3091771229448046,
+        0.01607401776496314
+      ],
+      "layer": 2,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.753873866234661,
+        0.1979059104713222,
+        0.026139676552724263
+      ],
+      "layer": 3,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.6882966266875913,
+        0.24098661515450762,
+        0.04298083807683007
+      ],
+      "layer": 4,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.6467868052648713,
+        0.23567214445013498,
+        0.0786792682451471
+      ],
+      "layer": 5,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.626734246879609,
+        0.25540600488515003,
+        0.08187237421974015
+      ],
+      "layer": 6,
+      "n_components": 3,
+      "n_pairs": 6
+    },
+    {
+      "explained_variance_ratio": [
+        0.6726226802537186,
+        0.24722595244179743,
+        0.04597557184966294
+      ],
+      "layer": 7,
+      "n_components": 3,
+      "n_pairs": 6
+    }
+  ]
+}

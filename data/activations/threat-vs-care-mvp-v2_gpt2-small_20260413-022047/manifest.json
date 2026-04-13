@@ -1,0 +1,781 @@
+{
+  "deterministic_seed": 0,
+  "device": "mps",
+  "experiment_description": "Expanded version of the threat-vs-care MVP experiment. Adds six additional task types for more meaningful leave-one-task-out evaluation, and diversifies narrative control prompt openers to reduce reliance on the \"Story context:\" prefix as a structural cue.\n",
+  "experiment_name": "threat-vs-care-mvp-v2",
+  "extraction": {
+    "components": [
+      "resid_post",
+      "mlp_post"
+    ],
+    "layers": "all",
+    "position": {
+      "index": null,
+      "strategy": "last"
+    },
+    "save_logits": true
+  },
+  "length_deltas": {
+    "arithmetic_reasoning": {
+      "delta_chars": 23,
+      "max_chars": 297,
+      "min_chars": 274
+    },
+    "classify_sentiment": {
+      "delta_chars": 23,
+      "max_chars": 319,
+      "min_chars": 296
+    },
+    "compare_approaches": {
+      "delta_chars": 23,
+      "max_chars": 226,
+      "min_chars": 203
+    },
+    "estimate_quantity": {
+      "delta_chars": 23,
+      "max_chars": 199,
+      "min_chars": 176
+    },
+    "extract_facts": {
+      "delta_chars": 23,
+      "max_chars": 245,
+      "min_chars": 222
+    },
+    "identify_fallacy": {
+      "delta_chars": 23,
+      "max_chars": 259,
+      "min_chars": 236
+    },
+    "logical_deduction": {
+      "delta_chars": 23,
+      "max_chars": 228,
+      "min_chars": 205
+    },
+    "summarize_paragraph": {
+      "delta_chars": 23,
+      "max_chars": 325,
+      "min_chars": 302
+    }
+  },
+  "model_backend": "transformer_lens",
+  "model_identifier": "gpt2",
+  "model_name": "gpt2-small",
+  "n_layers": 12,
+  "samples": [
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_0.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_1.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_2.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_0.pt",
+      "sample_id": "summarize_paragraph__threat__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_1.pt",
+      "sample_id": "summarize_paragraph__threat__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_2.pt",
+      "sample_id": "summarize_paragraph__threat__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_0.pt",
+      "sample_id": "summarize_paragraph__care__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_1.pt",
+      "sample_id": "summarize_paragraph__care__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_2.pt",
+      "sample_id": "summarize_paragraph__care__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_0.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_1.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_2.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/classify_sentiment__neutral__variant_0.pt",
+      "sample_id": "classify_sentiment__neutral__variant_0",
+      "task_id": "classify_sentiment",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/classify_sentiment__neutral__variant_1.pt",
+      "sample_id": "classify_sentiment__neutral__variant_1",
+      "task_id": "classify_sentiment",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/classify_sentiment__neutral__variant_2.pt",
+      "sample_id": "classify_sentiment__neutral__variant_2",
+      "task_id": "classify_sentiment",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/classify_sentiment__threat__variant_0.pt",
+      "sample_id": "classify_sentiment__threat__variant_0",
+      "task_id": "classify_sentiment",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/classify_sentiment__threat__variant_1.pt",
+      "sample_id": "classify_sentiment__threat__variant_1",
+      "task_id": "classify_sentiment",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/classify_sentiment__threat__variant_2.pt",
+      "sample_id": "classify_sentiment__threat__variant_2",
+      "task_id": "classify_sentiment",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/classify_sentiment__care__variant_0.pt",
+      "sample_id": "classify_sentiment__care__variant_0",
+      "task_id": "classify_sentiment",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/classify_sentiment__care__variant_1.pt",
+      "sample_id": "classify_sentiment__care__variant_1",
+      "task_id": "classify_sentiment",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/classify_sentiment__care__variant_2.pt",
+      "sample_id": "classify_sentiment__care__variant_2",
+      "task_id": "classify_sentiment",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/classify_sentiment__narrative_threat_control__variant_0.pt",
+      "sample_id": "classify_sentiment__narrative_threat_control__variant_0",
+      "task_id": "classify_sentiment",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/classify_sentiment__narrative_threat_control__variant_1.pt",
+      "sample_id": "classify_sentiment__narrative_threat_control__variant_1",
+      "task_id": "classify_sentiment",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/classify_sentiment__narrative_threat_control__variant_2.pt",
+      "sample_id": "classify_sentiment__narrative_threat_control__variant_2",
+      "task_id": "classify_sentiment",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/logical_deduction__neutral__variant_0.pt",
+      "sample_id": "logical_deduction__neutral__variant_0",
+      "task_id": "logical_deduction",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/logical_deduction__neutral__variant_1.pt",
+      "sample_id": "logical_deduction__neutral__variant_1",
+      "task_id": "logical_deduction",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/logical_deduction__neutral__variant_2.pt",
+      "sample_id": "logical_deduction__neutral__variant_2",
+      "task_id": "logical_deduction",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/logical_deduction__threat__variant_0.pt",
+      "sample_id": "logical_deduction__threat__variant_0",
+      "task_id": "logical_deduction",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/logical_deduction__threat__variant_1.pt",
+      "sample_id": "logical_deduction__threat__variant_1",
+      "task_id": "logical_deduction",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/logical_deduction__threat__variant_2.pt",
+      "sample_id": "logical_deduction__threat__variant_2",
+      "task_id": "logical_deduction",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/logical_deduction__care__variant_0.pt",
+      "sample_id": "logical_deduction__care__variant_0",
+      "task_id": "logical_deduction",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/logical_deduction__care__variant_1.pt",
+      "sample_id": "logical_deduction__care__variant_1",
+      "task_id": "logical_deduction",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/logical_deduction__care__variant_2.pt",
+      "sample_id": "logical_deduction__care__variant_2",
+      "task_id": "logical_deduction",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/logical_deduction__narrative_threat_control__variant_0.pt",
+      "sample_id": "logical_deduction__narrative_threat_control__variant_0",
+      "task_id": "logical_deduction",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/logical_deduction__narrative_threat_control__variant_1.pt",
+      "sample_id": "logical_deduction__narrative_threat_control__variant_1",
+      "task_id": "logical_deduction",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/logical_deduction__narrative_threat_control__variant_2.pt",
+      "sample_id": "logical_deduction__narrative_threat_control__variant_2",
+      "task_id": "logical_deduction",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/identify_fallacy__neutral__variant_0.pt",
+      "sample_id": "identify_fallacy__neutral__variant_0",
+      "task_id": "identify_fallacy",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/identify_fallacy__neutral__variant_1.pt",
+      "sample_id": "identify_fallacy__neutral__variant_1",
+      "task_id": "identify_fallacy",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/identify_fallacy__neutral__variant_2.pt",
+      "sample_id": "identify_fallacy__neutral__variant_2",
+      "task_id": "identify_fallacy",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/identify_fallacy__threat__variant_0.pt",
+      "sample_id": "identify_fallacy__threat__variant_0",
+      "task_id": "identify_fallacy",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/identify_fallacy__threat__variant_1.pt",
+      "sample_id": "identify_fallacy__threat__variant_1",
+      "task_id": "identify_fallacy",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/identify_fallacy__threat__variant_2.pt",
+      "sample_id": "identify_fallacy__threat__variant_2",
+      "task_id": "identify_fallacy",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/identify_fallacy__care__variant_0.pt",
+      "sample_id": "identify_fallacy__care__variant_0",
+      "task_id": "identify_fallacy",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/identify_fallacy__care__variant_1.pt",
+      "sample_id": "identify_fallacy__care__variant_1",
+      "task_id": "identify_fallacy",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/identify_fallacy__care__variant_2.pt",
+      "sample_id": "identify_fallacy__care__variant_2",
+      "task_id": "identify_fallacy",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/identify_fallacy__narrative_threat_control__variant_0.pt",
+      "sample_id": "identify_fallacy__narrative_threat_control__variant_0",
+      "task_id": "identify_fallacy",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/identify_fallacy__narrative_threat_control__variant_1.pt",
+      "sample_id": "identify_fallacy__narrative_threat_control__variant_1",
+      "task_id": "identify_fallacy",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/identify_fallacy__narrative_threat_control__variant_2.pt",
+      "sample_id": "identify_fallacy__narrative_threat_control__variant_2",
+      "task_id": "identify_fallacy",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/estimate_quantity__neutral__variant_0.pt",
+      "sample_id": "estimate_quantity__neutral__variant_0",
+      "task_id": "estimate_quantity",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/estimate_quantity__neutral__variant_1.pt",
+      "sample_id": "estimate_quantity__neutral__variant_1",
+      "task_id": "estimate_quantity",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/estimate_quantity__neutral__variant_2.pt",
+      "sample_id": "estimate_quantity__neutral__variant_2",
+      "task_id": "estimate_quantity",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/estimate_quantity__threat__variant_0.pt",
+      "sample_id": "estimate_quantity__threat__variant_0",
+      "task_id": "estimate_quantity",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/estimate_quantity__threat__variant_1.pt",
+      "sample_id": "estimate_quantity__threat__variant_1",
+      "task_id": "estimate_quantity",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/estimate_quantity__threat__variant_2.pt",
+      "sample_id": "estimate_quantity__threat__variant_2",
+      "task_id": "estimate_quantity",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/estimate_quantity__care__variant_0.pt",
+      "sample_id": "estimate_quantity__care__variant_0",
+      "task_id": "estimate_quantity",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/estimate_quantity__care__variant_1.pt",
+      "sample_id": "estimate_quantity__care__variant_1",
+      "task_id": "estimate_quantity",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/estimate_quantity__care__variant_2.pt",
+      "sample_id": "estimate_quantity__care__variant_2",
+      "task_id": "estimate_quantity",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/estimate_quantity__narrative_threat_control__variant_0.pt",
+      "sample_id": "estimate_quantity__narrative_threat_control__variant_0",
+      "task_id": "estimate_quantity",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/estimate_quantity__narrative_threat_control__variant_1.pt",
+      "sample_id": "estimate_quantity__narrative_threat_control__variant_1",
+      "task_id": "estimate_quantity",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/estimate_quantity__narrative_threat_control__variant_2.pt",
+      "sample_id": "estimate_quantity__narrative_threat_control__variant_2",
+      "task_id": "estimate_quantity",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/extract_facts__neutral__variant_0.pt",
+      "sample_id": "extract_facts__neutral__variant_0",
+      "task_id": "extract_facts",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/extract_facts__neutral__variant_1.pt",
+      "sample_id": "extract_facts__neutral__variant_1",
+      "task_id": "extract_facts",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/extract_facts__neutral__variant_2.pt",
+      "sample_id": "extract_facts__neutral__variant_2",
+      "task_id": "extract_facts",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/extract_facts__threat__variant_0.pt",
+      "sample_id": "extract_facts__threat__variant_0",
+      "task_id": "extract_facts",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/extract_facts__threat__variant_1.pt",
+      "sample_id": "extract_facts__threat__variant_1",
+      "task_id": "extract_facts",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/extract_facts__threat__variant_2.pt",
+      "sample_id": "extract_facts__threat__variant_2",
+      "task_id": "extract_facts",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/extract_facts__care__variant_0.pt",
+      "sample_id": "extract_facts__care__variant_0",
+      "task_id": "extract_facts",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/extract_facts__care__variant_1.pt",
+      "sample_id": "extract_facts__care__variant_1",
+      "task_id": "extract_facts",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/extract_facts__care__variant_2.pt",
+      "sample_id": "extract_facts__care__variant_2",
+      "task_id": "extract_facts",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/extract_facts__narrative_threat_control__variant_0.pt",
+      "sample_id": "extract_facts__narrative_threat_control__variant_0",
+      "task_id": "extract_facts",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/extract_facts__narrative_threat_control__variant_1.pt",
+      "sample_id": "extract_facts__narrative_threat_control__variant_1",
+      "task_id": "extract_facts",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/extract_facts__narrative_threat_control__variant_2.pt",
+      "sample_id": "extract_facts__narrative_threat_control__variant_2",
+      "task_id": "extract_facts",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/compare_approaches__neutral__variant_0.pt",
+      "sample_id": "compare_approaches__neutral__variant_0",
+      "task_id": "compare_approaches",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/compare_approaches__neutral__variant_1.pt",
+      "sample_id": "compare_approaches__neutral__variant_1",
+      "task_id": "compare_approaches",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/compare_approaches__neutral__variant_2.pt",
+      "sample_id": "compare_approaches__neutral__variant_2",
+      "task_id": "compare_approaches",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/compare_approaches__threat__variant_0.pt",
+      "sample_id": "compare_approaches__threat__variant_0",
+      "task_id": "compare_approaches",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/compare_approaches__threat__variant_1.pt",
+      "sample_id": "compare_approaches__threat__variant_1",
+      "task_id": "compare_approaches",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/compare_approaches__threat__variant_2.pt",
+      "sample_id": "compare_approaches__threat__variant_2",
+      "task_id": "compare_approaches",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/compare_approaches__care__variant_0.pt",
+      "sample_id": "compare_approaches__care__variant_0",
+      "task_id": "compare_approaches",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/compare_approaches__care__variant_1.pt",
+      "sample_id": "compare_approaches__care__variant_1",
+      "task_id": "compare_approaches",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/compare_approaches__care__variant_2.pt",
+      "sample_id": "compare_approaches__care__variant_2",
+      "task_id": "compare_approaches",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/compare_approaches__narrative_threat_control__variant_0.pt",
+      "sample_id": "compare_approaches__narrative_threat_control__variant_0",
+      "task_id": "compare_approaches",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/compare_approaches__narrative_threat_control__variant_1.pt",
+      "sample_id": "compare_approaches__narrative_threat_control__variant_1",
+      "task_id": "compare_approaches",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/compare_approaches__narrative_threat_control__variant_2.pt",
+      "sample_id": "compare_approaches__narrative_threat_control__variant_2",
+      "task_id": "compare_approaches",
+      "variant_index": 2
+    }
+  ],
+  "token_length_deltas": {
+    "arithmetic_reasoning": {
+      "delta_tokens": 7,
+      "max_tokens": 67,
+      "min_tokens": 60
+    },
+    "classify_sentiment": {
+      "delta_tokens": 7,
+      "max_tokens": 73,
+      "min_tokens": 66
+    },
+    "compare_approaches": {
+      "delta_tokens": 7,
+      "max_tokens": 49,
+      "min_tokens": 42
+    },
+    "estimate_quantity": {
+      "delta_tokens": 7,
+      "max_tokens": 45,
+      "min_tokens": 38
+    },
+    "extract_facts": {
+      "delta_tokens": 7,
+      "max_tokens": 55,
+      "min_tokens": 48
+    },
+    "identify_fallacy": {
+      "delta_tokens": 7,
+      "max_tokens": 59,
+      "min_tokens": 52
+    },
+    "logical_deduction": {
+      "delta_tokens": 7,
+      "max_tokens": 54,
+      "min_tokens": 47
+    },
+    "summarize_paragraph": {
+      "delta_tokens": 7,
+      "max_tokens": 67,
+      "min_tokens": 60
+    }
+  },
+  "warnings": []
+}

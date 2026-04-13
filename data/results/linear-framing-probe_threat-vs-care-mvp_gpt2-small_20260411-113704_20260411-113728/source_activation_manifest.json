@@ -1,0 +1,205 @@
+{
+  "deterministic_seed": 0,
+  "device": "mps",
+  "experiment_description": "Paired framing experiment with self-directed threat, care, neutral, and narrative control conditions. Multiple paraphrases are included to reduce lexical shortcutting.\n",
+  "experiment_name": "threat-vs-care-mvp",
+  "extraction": {
+    "components": [
+      "resid_post",
+      "mlp_post"
+    ],
+    "layers": "all",
+    "position": {
+      "index": null,
+      "strategy": "last"
+    },
+    "save_logits": true
+  },
+  "length_deltas": {
+    "arithmetic_reasoning": {
+      "delta_chars": 22,
+      "max_chars": 296,
+      "min_chars": 274
+    },
+    "summarize_paragraph": {
+      "delta_chars": 22,
+      "max_chars": 324,
+      "min_chars": 302
+    }
+  },
+  "model_backend": "transformer_lens",
+  "model_identifier": "gpt2",
+  "model_name": "gpt2-small",
+  "n_layers": 12,
+  "samples": [
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_0.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_1.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/summarize_paragraph__neutral__variant_2.pt",
+      "sample_id": "summarize_paragraph__neutral__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_0.pt",
+      "sample_id": "summarize_paragraph__threat__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_1.pt",
+      "sample_id": "summarize_paragraph__threat__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/summarize_paragraph__threat__variant_2.pt",
+      "sample_id": "summarize_paragraph__threat__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_0.pt",
+      "sample_id": "summarize_paragraph__care__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_1.pt",
+      "sample_id": "summarize_paragraph__care__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/summarize_paragraph__care__variant_2.pt",
+      "sample_id": "summarize_paragraph__care__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_0.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_0",
+      "task_id": "summarize_paragraph",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_1.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_1",
+      "task_id": "summarize_paragraph",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/summarize_paragraph__narrative_threat_control__variant_2.pt",
+      "sample_id": "summarize_paragraph__narrative_threat_control__variant_2",
+      "task_id": "summarize_paragraph",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "neutral",
+      "path": "samples/arithmetic_reasoning__neutral__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__neutral__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "threat",
+      "path": "samples/arithmetic_reasoning__threat__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__threat__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "care",
+      "path": "samples/arithmetic_reasoning__care__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__care__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_0.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_0",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 0
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_1.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_1",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 1
+    },
+    {
+      "condition_name": "narrative_threat_control",
+      "path": "samples/arithmetic_reasoning__narrative_threat_control__variant_2.pt",
+      "sample_id": "arithmetic_reasoning__narrative_threat_control__variant_2",
+      "task_id": "arithmetic_reasoning",
+      "variant_index": 2
+    }
+  ],
+  "warnings": []
+}

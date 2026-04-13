@@ -1,0 +1,14 @@
+name: gpt2-small
+backend: transformer_lens
+model_name: gpt2
+device_preference:
+  - mps
+  - cuda
+  - cpu
+dtype: float32
+default_prepend_bos: true
+trust_remote_code: false
+quantization:
+  mode: none
+seed: 0
+
