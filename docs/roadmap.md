@@ -64,7 +64,20 @@ Delivered:
 - basic layer depth plots
 - GPT-2 Small and TinyStories phase-4 runs
 
-## Phase 5
+## Phase 5 (activation patching)
+
+Status: complete
+
+Delivered:
+
+- last-token residual stream patching across all layers
+- matched-pair evaluation across tasks and variants
+- recovery cosine and KL divergence metrics
+- per-layer summary plots and pair-level CSVs
+- GPT-2 Small v2 patching run (care → threat)
+- Finding 002: causal verification of the framing representation
+
+## Phase 6
 
 Status: next
 
@@ -78,9 +91,10 @@ Planned focus:
 
 ## Not yet implemented
 
-- activation patching
 - nonlinear probes
 - large-model cloud workflows
 - significance testing beyond the current permutation baseline workflow
 - publication-oriented reporting
+- patching on components other than `resid_post` (attention patterns, MLP outputs)
+- multi-token-generation patching effects
 

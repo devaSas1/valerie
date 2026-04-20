@@ -30,6 +30,10 @@ class LoadedModel:
         """Return token ids for text, or None if the backend has no real tokenizer."""
         return self.runtime.tokenize(text)
 
+    def run_with_hooks(self, prompt: str, fwd_hooks: list) -> Any:
+        """Run a prompt with mid-forward-pass hooks. Returns logits."""
+        return self.runtime.run_with_hooks(prompt, fwd_hooks)
+
 
 def _select_torch_device(device_preference: list[str]) -> str:
     try:
@@ -109,6 +113,10 @@ class DummyRuntime:
     def tokenize(self, text: str) -> list[int] | None:
         return None
 
+    def run_with_hooks(self, prompt: str, fwd_hooks: list) -> Any:
+        logits, _, _ = self.run_with_cache(prompt)
+        return logits
+
 
 class TransformerLensRuntime:
     """Adapter around HookedTransformer."""
@@ -155,6 +163,13 @@ class TransformerLensRuntime:
     def tokenize(self, text: str) -> list[int]:
         tokens = self.model.to_tokens(text, prepend_bos=self.default_prepend_bos)
         return tokens[0].tolist()
+
+    def run_with_hooks(self, prompt: str, fwd_hooks: list) -> Any:
+        return self.model.run_with_hooks(
+            prompt,
+            fwd_hooks=fwd_hooks,
+            prepend_bos=self.default_prepend_bos,
+        )
 
 
 def _build_dummy_runtime(config: ModelConfig) -> LoadedModel:

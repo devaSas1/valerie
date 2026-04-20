@@ -58,6 +58,28 @@ Key results:
 - 8-task leave-one-task-out cross-validation — first credible evaluation
 - See [`findings.md`](./findings.md) for full interpretation
 
+## GPT-2 Small v2 patching results (causal verification)
+
+Run directory:
+
+- [`data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440)
+
+Important files:
+
+- [`manifest.json`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440/manifest.json)
+- [`patching_summary.csv`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440/metrics/patching_summary.csv)
+- [`patching_pairs.csv`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440/metrics/patching_pairs.csv)
+- [`recovery_by_layer.png`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440/plots/recovery_by_layer.png)
+
+Key results:
+
+- Activation patching on last-token `resid_post`, care → threat direction
+- 24 matched pairs (8 tasks × 3 variants)
+- Recovery cosine **0.954** at layers 9–10 (mean across pairs), **1.000** at layer 11
+- First layer with positive minimum pair recovery: layer 6 (matches probe onset)
+- Establishes that the framing representation is causally load-bearing, not passive
+- See [`findings.md`](./findings.md) Finding 002 for full interpretation
+
 ## How to use this ledger
 
 When a new empirical run is completed:

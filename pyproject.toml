@@ -34,6 +34,7 @@ dev = [
 [project.scripts]
 valerie-run-experiment = "valerie.experiments.runner:main"
 valerie-train-probes = "valerie.probes.trainer:main"
+valerie-run-patching = "valerie.patching.runner:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/valerie"]

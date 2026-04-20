@@ -1,0 +1,34 @@
+{
+  "artifacts": {
+    "patching_pairs_csv": "metrics/patching_pairs.csv",
+    "patching_summary_csv": "metrics/patching_summary.csv",
+    "recovery_plot": "plots/recovery_by_layer.png"
+  },
+  "clean_condition": "care",
+  "component": "resid_post",
+  "corrupted_condition": "threat",
+  "layers_analyzed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "n_pairs": 24,
+  "source_activation_dir": "data/activations/threat-vs-care-mvp-v2_gpt2-small_20260413-022047",
+  "source_experiment_name": "threat-vs-care-mvp-v2",
+  "source_model_name": "gpt2-small",
+  "summary": {
+    "best_recovery_cosine_mean": 1.0,
+    "best_recovery_layer": 11,
+    "kl_baseline_mean": 1.2028422963931128e-05,
+    "kl_patched_mean": 1.0697540729919768e-05
+  }
+}

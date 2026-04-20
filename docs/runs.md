@@ -160,6 +160,39 @@ Notes:
 - 100% multiclass accuracy at layers 8–10, 100% narrative control at layers 6–11
 - token length delta uniform at 7 tokens across all 8 tasks, no warnings
 
+### GPT-2 Small v2 activation patching
+
+Purpose:
+
+- causal verification of the framing representation identified by the probe
+- patch the last-token `resid_post` from a care run into a threat run at each layer and measure how much of the care-vs-threat logit direction is recovered
+- produced Finding 002 (see [`findings.md`](./findings.md))
+
+Source activations:
+
+- [`data/activations/threat-vs-care-mvp-v2_gpt2-small_20260413-022047`](../data/activations/threat-vs-care-mvp-v2_gpt2-small_20260413-022047)
+
+Results:
+
+- [`data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440`](../data/patching/patching_threat-vs-care-mvp-v2_gpt2-small_20260413-022047_20260413-105440)
+
+Command:
+
+```bash
+.venv/bin/python -m valerie.patching.runner \
+  --activation-dir data/activations/threat-vs-care-mvp-v2_gpt2-small_20260413-022047 \
+  --model-config configs/models/gpt2-small.yaml \
+  --clean-condition care \
+  --corrupted-condition threat \
+  --component resid_post
+```
+
+Notes:
+
+- 24 matched pairs (8 tasks × 3 variants)
+- recovery cosine 0.954 at layers 9–10, 1.000 at layer 11
+- patching only last-token position to control for 7-token framing wrapper length delta
+
 ## What to run next
 
 The next run should use `threat-vs-care-v2.yaml`. That config has 8 tasks, which makes the leave-one-task-out evaluation meaningful (7 train / 1 test per fold instead of 1/1).
